@@ -91,4 +91,4 @@ j-JO8EFSDPGFSQ
 
 
 
-hadoop jar book-examples-1.0.0-jar-with-dependencies.jar org.apache.giraph.GiraphRunner SimpleShortestPathsComputation -vip input/facebook_graph_json_1.txt -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op output1 -w 1 -ca giraph.SplitMasterWorker=falsej-JO8EFSDPGFSQ
+hadoop jar book-examples-1.0.0-jar-with-dependencies.jar org.apache.giraph.GiraphRunner SimpleShortestPathsComputation -vip input/facebook_graph_json_1.txt -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op output1 -w 1 -ca giraph.SplitMasterWorker=false
