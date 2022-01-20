@@ -48,15 +48,13 @@ InstanceGroupType=CORE,InstanceCount=2,InstanceType=m5.xlarge \
 ## I ran this but don't know if it's necesarry
 `sudo /usr/lib/zookeeper/bin/zkServer.sh start`
 
-## effeciently copy from s3 to hdfs
-
-`s3-dist-cp --src s3://lsc-bucket-v0/myfolder/facebook_graph_json_1.txt --dest hdfs:///user/hadoop/input`
-
 ## put file
 `aws emr put --cluster-id j-3C5FIYN5G7OWM --key-pair-file ~/emr2key.pem --src target/SimpleShortestPath_2.10.1_hadoop-1.0.0-jar-with-dependencies.jar`
-
 ## ssh connection
 `aws emr ssh --cluster-id j-NG59OU6NM7SV --key-pair-file ~/emr2key.pem`
+
+## effeciently copy from s3 to hdfs
+`s3-dist-cp --src s3://lsc-bucket-v0/myfolder/facebook_graph_json_1.txt --dest hdfs:///user/hadoop/input`
 
 ## Run command
 ec2-54-86-176-6.compute-1.amazonaws.com <= public container ip
