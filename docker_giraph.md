@@ -3,9 +3,7 @@
 
 1. `docker pull izone/hadoop`
 
-2. `docker run -dit izone/hadoop` # returns IMAGE_ID
-
-3. `docker exec -it {IMAGE_ID} bash `
+2. `docker run -d --name giraph -v {PATH_TO_PROJECT_IN_YOUR_DISK}:/root/myProject izone/hadoop`
 ## Setup in your image terminal
 ### Add for apt-get to work
 `mkdir -p /usr/share/man/man1`
